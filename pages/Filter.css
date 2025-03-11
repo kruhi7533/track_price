@@ -1,0 +1,147 @@
+.filters-wrapper {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    width: 250px;
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 10px;
+    position: relative;
+    top: 50px; /* Shifted down to avoid overlap */
+    z-index: 10; /* Ensures it stays above other elements */
+}
+
+/* Header Section */
+.filters-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #f0f0f0;
+    margin-bottom: 10px;
+}
+
+.filters-title {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.filters-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    color: #555;
+}
+
+.clear-all {
+    cursor: pointer;
+    color: #c79315;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.plus-icon {
+    font-size: 12px;
+    cursor: pointer;
+    color: #c79315;
+}
+
+/* Filter Section */
+.filter-section {
+    margin-bottom: 12px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.section-title {
+    font-weight: bold;
+    font-size: 13px;
+    color: black;
+    margin-bottom: 6px;
+}
+
+/* Price Inputs */
+.price-inputs {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.price-inputs input {
+    width: 65px;
+    padding: 5px 6px;
+    font-size: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.price-inputs input::placeholder {
+    color: #888;
+    font-size: 12px;
+}
+
+/* Go Button */
+.go-btn {
+    background-color: #c79315;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.go-btn:hover {
+    background-color: #a57712;
+}
+
+/* Checkbox Labels */
+label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin: 5px 0;
+    font-size: 13px;
+    color: #555;
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+/* Category Search */
+.category-search {
+    width: 100%;
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 12px;
+    margin-bottom: 6px;
+}
+
+/* Category List */
+.category-list {
+    max-height: 120px;
+    overflow-y: auto;
+    background-color: #f9f9f9;
+    padding: 5px;
+    border: 1px solid #ccc;
+    font-size: 13px;
+    color: #555;
+}
+
+/* Ensure filters are properly positioned */
+@media (max-width: 768px) {
+    .filters-wrapper {
+        position: fixed;
+        left: 10px;
+        top: 70px; /* Adjusted for mobile */
+        z-index: 20;
+    }
+}
